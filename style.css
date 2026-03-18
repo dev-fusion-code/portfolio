@@ -22,6 +22,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -416,6 +417,11 @@ a {
     }
 }
 
+.marquee-wrapper {
+    overflow: hidden;
+    margin: 60px 0;
+}
+
 .marquee-container {
     background: rgba(139, 92, 246, 0.1);
     border-top: 1px solid rgba(139, 92, 246, 0.2);
@@ -426,7 +432,6 @@ a {
     display: flex;
     position: relative;
     transform: rotate(-1.5deg) scale(1.05);
-    margin: 60px 0;
     box-shadow: 0 0 30px rgba(139, 92, 246, 0.05);
 }
 
