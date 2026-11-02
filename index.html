@@ -1,364 +1,1047 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <title>Saketh P | Portfolio</title>
+        <meta
+            name="description"
+            content="Portfolio of Saketh P, a final-year CSE student and software developer. Web applications and APIs with Python, Django and FastAPI. Interested in cybersecurity."
+        />
+        <meta name="theme-color" content="#c9c9c9" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saketh P | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Gaegu:wght@700&family=Geist+Mono:wght@400;500;600&family=Geist:wght@400;500;600;700&family=Pixelify+Sans:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
+        <link rel="apple-touch-icon" href="assets/favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<body>
-    <div class="gradient-sphere sphere-1"></div>
-    <div class="gradient-sphere sphere-2"></div>
-    <nav class="navbar">
-        <div class="logo">Saketh P</div>
-        <ul class="nav-links">
-            <li><a href="#about" class="nav-item">About</a></li>
-            <li><a href="#credentials" class="nav-item">Credentials</a></li>
-            <li><a href="#work" class="nav-item">Work</a></li>
-            <li><a href="#contact" class="nav-item">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-    <div class="mobile-nav">
-        <div class="mobile-nav-links">
-            <a href="#about" class="mobile-nav-item">About</a>
-            <a href="#credentials" class="mobile-nav-item">Credentials</a>
-            <a href="#work" class="mobile-nav-item">Work</a>
-            <a href="#contact" class="mobile-nav-item">Contact</a>
-        </div>
-    </div>
-    <section class="hero">
-        <div class="container hero-layout">
-            <div class="hero-text">
-                <p class="greeting reveal-text">Hello, I'm</p>
-                <h1 class="profile-name reveal-text delay-1">Saketh P</h1>
-                <h2 class="profile-title reveal-text delay-1">B.Tech CS Student</h2>
-                <p class="profile-bio reveal-text delay-2">
-                    I'm a computer science student bringing ideas to life.<br>
-                    Currently learning Django, UI/UX, and app development.
-                </p>
-                <div class="hero-cta reveal-text delay-2">
-                    <a href="#work" class="btn primary">View Projects</a>
-                    <a href="#contact" class="btn secondary">Get in Touch</a>
-                </div>
-                <div class="social-links reveal-text delay-2">
-                    <a href="https://github.com/dev-fusion-code" target="_blank" class="social-icon"
-                        aria-label="GitHub">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sakethp-" target="_blank" class="social-icon"
-                        aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </section>
-    <div class="marquee-wrapper">
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <span>PYTHON</span> <span class="sep">•</span>
-                <span>DJANGO</span> <span class="sep">•</span>
-                <span>DJANGO REST FRAMEWORK</span> <span class="sep">•</span>
-                <span>FLASK</span> <span class="sep">•</span>
-                <span>MYSQL</span> <span class="sep">•</span>
-                <span>SQLITE3</span> <span class="sep">•</span>
-                <span>JAVA</span> <span class="sep">•</span>
-                <span>C</span> <span class="sep">•</span>
-                <span>C++</span> <span class="sep">•</span>
-                <span>MACHINE LEARNING</span> <span class="sep">•</span>
-                <span>AI TOOLS</span> <span class="sep">•</span>
-                <span>COMPUTER HARDWARE & NETWORKING</span> <span class="sep">•</span>
-                <span>FIGMA</span> <span class="sep">•</span>
-                <span>HTML5</span> <span class="sep">•</span>
-                <span>CSS3</span> <span class="sep">•</span>
-                <span>JAVASCRIPT</span> <span class="sep">•</span>
-            </div>
-            <div class="marquee-content" aria-hidden="true">
-                <span>PYTHON</span> <span class="sep">•</span>
-                <span>DJANGO</span> <span class="sep">•</span>
-                <span>DJANGO REST FRAMEWORK</span> <span class="sep">•</span>
-                <span>FLASK</span> <span class="sep">•</span>
-                <span>MYSQL</span> <span class="sep">•</span>
-                <span>SQLITE3</span> <span class="sep">•</span>
-                <span>JAVA</span> <span class="sep">•</span>
-                <span>C</span> <span class="sep">•</span>
-                <span>C++</span> <span class="sep">•</span>
-                <span>MACHINE LEARNING</span> <span class="sep">•</span>
-                <span>AI TOOLS</span> <span class="sep">•</span>
-                <span>COMPUTER HARDWARE & NETWORKING</span> <span class="sep">•</span>
-                <span>FIGMA</span> <span class="sep">•</span>
-                <span>HTML5</span> <span class="sep">•</span>
-                <span>CSS3</span> <span class="sep">•</span>
-                <span>JAVASCRIPT</span> <span class="sep">•</span>
-            </div>
-        </div>
-    </div>
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title reveal-up">About Me</h2>
-            <div class="bio-wrapper reveal-up">
-                <br>
-                <p class="bio-text">
-                    I am a computer science student based in India with a deep passion for solving problems through code and
-                    designing beautiful interfaces. My journey began with Python and has evolved into exploring Django
-                    full-stack development and UI/UX design. I'm focused on building mobile-optimized, premium web
-                    applications while expanding my knowledge in Machine Learning and AI tools.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title reveal-up">Technical Arsenal</h2>
-            <div class="skills-grid">
-                <div class="skill-category reveal-up">
-                    <h3>Web Development & UI</h3>
-                    <div class="skill-pills">
-                        <span>Python (Django)</span><span>Flask</span>
-                        <span>Django REST</span><span>HTML5</span>
-                        <span>CSS3</span><span>JavaScript</span>
-                        <span>Figma</span><span>UI/UX Design</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal-up delay-1">
-                    <h3>Core Languages & Databases</h3>
-                    <div class="skill-pills">
-                        <span>Python</span><span>C</span>
-                        <span>C++ (Basic)</span><span>Java</span>
-                        <span>MySQL</span><span>SQLite3</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal-up delay-2">
-                    <h3>Tools & Emerging Tech</h3>
-                    <div class="skill-pills">
-                        <span>Machine Learning (Basics)</span><span>AI Tools</span>
-                        <span>OpenCV</span><span>InsightFace</span>
-                        <span>Hardware & Networking</span><span>Git/GitHub</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="credentials" class="section alt-bg">
-        <div class="container">
-            <h2 class="section-title reveal-up">Credentials</h2>
-            <div class="credentials-grid">
-                <div class="credential-column reveal-up">
-                    <h3 class="column-title"><span class="icon-box">🎓</span> Education</h3>
-                    <div class="timeline-item">
-                        <span class="timeline-date">2023 - 2027</span>
-                        <h4>B.Tech in Computer Science & Engineering</h4>
-                        <p class="timeline-place">Vimal Jyothi Engineering College</p>
-                        <p class="timeline-desc">CGPA: 8.19/10</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">2026</span>
-                        <h4>GATE CS 2026 — Qualified</h4>
-                        <p class="timeline-place">Graduate Aptitude Test in Engineering</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">2021 - 2023</span>
-                        <h4>Higher Secondary (Class XII)</h4>
-                        <p class="timeline-place">Mambaram English Medium School</p>
-                        <p class="timeline-desc">Computer Science and Mathematics</p>
-                    </div>
-                </div>
-                <div class="credential-column reveal-up delay-1">
-                    <h3 class="column-title"><span class="icon-box">🏆</span> Certifications</h3>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Issued November 2025</span>
-                        <h4>Operating System Fundamentals</h4>
-                        <p class="timeline-place">NPTEL (IIT Kharagpur)</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Issued October 2025</span>
-                        <h4>Python for Data Science</h4>
-                        <p class="timeline-place">NPTEL (IIT Madras)</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Issued July 2025</span>
-                        <h4>Python</h4>
-                        <p class="timeline-place">G-TEC Computer Education</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Issued November 2024</span>
-                        <h4>Programming in Java</h4>
-                        <p class="timeline-place">NPTEL (IIT Kharagpur)</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Issued September 2024</span>
-                        <h4>Java SE</h4>
-                        <p class="timeline-place">G-TEC Computer Education</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Issued June 2024</span>
-                        <h4>Programming in C</h4>
-                        <p class="timeline-place">Infosys Springboard</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Issued October 2023</span>
-                        <h4>Honours Diploma in Computer Hardware & Network</h4>
-                        <p class="timeline-place">G-TEC Computer Education</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="work" class="section">
-        <div class="container">
-            <h2 class="section-title reveal-up">My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card reveal-up">
-                    <div class="card-image-wrapper">
-                        <img src="project1.jpeg" alt="DjangoPost" class="card-image project-cover">
-                    </div>
-                    <div class="card-info">
-                        <h3>DjangoPost</h3>
-                        <p>A fully-featured blog platform built with Django — allowing posts, comments, likes, image
-                            uploads, user authentication, and more.</p>
-                        <div class="tags">
-                            <span>Django</span><span>HTML5</span><span>CSS</span><span>js</span><span>sqlite3</span>
-                        </div>
-                        <a href="https://github.com/dev-fusion-code/DjangoPost" class="link-arrow">View GitHub <svg
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="project-card reveal-up delay-1">
-                    <div class="card-image-wrapper">
-                        <img src="project2.jpeg" alt="whereismypic?" class="card-image project-cover">
-                    </div>
-                    <div class="card-info">
-                        <h3>whereismypic?</h3>
-                        <p>Automated event photo sorting and retrieval using AI/ML algorithms. Implented as a web-based
-                            app using Python Django.</p>
-                        <div class="tags">
-                            <span>Django</span><span>OpenCV</span><span>ML</span><span>InsightFace</span>
-                        </div>
-                        <a href="https://github.com/dev-fusion-code/whereismypic" class="link-arrow">View GitHub <svg
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="project-card reveal-up">
-                    <div class="card-image-wrapper">
-                        <img src="project3.jpeg" alt="Notely" class="card-image project-cover">
-                    </div>
-                    <div class="card-info">
-                        <h3>Notely</h3>
-                        <p>A web-based multi-user simple note-taking app built using Python Django with basic
-                            text-formatting options and multi-user account management.</p>
-                        <div class="tags">
-                            <span>Django</span><span>HTML</span><span>CSS</span><span>sqlite3</span>
-                        </div>
-                        <a href="https://github.com/dev-fusion-code/Notely" class="link-arrow">View GitHub <svg
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="project-card reveal-up delay-1">
-                    <div class="card-image-wrapper">
-                        <img src="project4.jpeg" alt="Sudoku" class="card-image project-cover">
-                    </div>
-                    <div class="card-info">
-                        <h3>Sudoku</h3>
-                        <p>A desktop Sudoku game with a clean, modern interface. Built using Python and tkinter,
-                            featuring puzzle generation, validation, and hint systems.</p>
-                        <div class="tags">
-                            <span>Python</span><span>tkinter</span>
-                        </div>
-                        <a href="https://github.com/dev-fusion-code/Sudoku" class="link-arrow">View GitHub <svg
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="project-card reveal-up">
-                    <div class="card-image-wrapper">
-                        <img src="project5.jpeg" alt="snippet" class="card-image project-cover">
-                    </div>
-                    <div class="card-info">
-                        <h3>snippet</h3>
-                        <p>A lightweight terminal snippet manager built in C. Save, search, tag, export, and manage
-                            reusable code snippets right from the command line.</p>
-                        <div class="tags">
-                            <span>C</span><span>CLI</span><span>File I/O</span>
-                        </div>
-                        <a href="https://github.com/dev-fusion-code/snippet" class="link-arrow">View GitHub <svg
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="section">
-        <div class="container contact-container reveal-up">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-sub">Have a project in mind or want to hire me? Send me a message.</p>
-            <form class="contact-form"
-                action="https://docs.google.com/forms/d/e/1FAIpQLScpSL3sqrX3HWMJF3C8wDvYSoheEq_csuA_zIbGgSQOnByw3w/formResponse"
-                method="POST" target="hidden_iframe">
-                <div class="form-group">
-                    <input type="text" id="name" name="entry.1876380058" required placeholder=" ">
-                    <label for="name">Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="entry.1703142794" required placeholder=" ">
-                    <label for="email">Email</label>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="entry.718276959" required placeholder=" " rows="4"></textarea>
-                    <label for="message">Message</label>
-                </div>
-                <button type="submit" class="btn primary submit-btn">Send Message</button>
-            </form>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-            <div class="form-success" id="formSuccess">
-                <div class="success-icon">✓</div>
-                <h3>Message Sent!</h3>
-                <p>Thanks for reaching out. I'll get back to you soon.</p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Saketh P. Built with passion & code.</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
 
+        <div class="paper">
+            <header class="topbar" id="topbar">
+                <a href="#hero" class="brand" id="brandText" aria-label="Back to top">
+                    <span class="brand__tag">PORTFOLIO</span>
+                </a>
+                <nav class="nav" id="nav" aria-label="Main navigation">
+                    <a href="#about" class="nav__link is-active" data-nav="about">ABOUT</a>
+                    <a href="#experience" class="nav__link" data-nav="experience">EXPERIENCE</a>
+                    <a href="#skills" class="nav__link" data-nav="skills">SKILLS</a>
+                    <a href="#education" class="nav__link" data-nav="education">EDUCATION</a>
+                    <a href="#achievements" class="nav__link" data-nav="achievements">ACHIEVEMENTS</a>
+                    <a href="#projects" class="nav__link" data-nav="projects">PROJECTS</a>
+                    <a href="#contact" class="nav__link nav__link--cta" data-nav="contact">CONTACT</a>
+                </nav>
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                    type="button"
+                    aria-label="Toggle navigation menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                >
+                    MENU
+                </button>
+            </header>
+
+            <div class="menu-backdrop" id="menuBackdrop" hidden></div>
+            <div class="menu" id="menu" hidden>
+                <span class="k menu__head">INDEX</span>
+                <nav aria-label="Mobile navigation">
+                    <a href="#about" class="menu__item"
+                        ><span class="menu__num k">01</span><span class="menu__title">About</span
+                        ><span class="menu__tag k">BIO &amp; FOCUS</span><span aria-hidden="true">→</span></a
+                    >
+                    <a href="#experience" class="menu__item"
+                        ><span class="menu__num k">02</span><span class="menu__title">Experience</span
+                        ><span class="menu__tag k">CYBER POLICE</span><span aria-hidden="true">→</span></a
+                    >
+                    <a href="#skills" class="menu__item"
+                        ><span class="menu__num k">03</span><span class="menu__title">Skills</span
+                        ><span class="menu__tag k">STACK &amp; TOOLS</span><span aria-hidden="true">→</span></a
+                    >
+                    <a href="#education" class="menu__item"
+                        ><span class="menu__num k">04</span><span class="menu__title">Education</span
+                        ><span class="menu__tag k">ACADEMICS</span><span aria-hidden="true">→</span></a
+                    >
+                    <a href="#achievements" class="menu__item"
+                        ><span class="menu__num k">05</span><span class="menu__title">Achievements</span
+                        ><span class="menu__tag k">AWARDS &amp; CERTS</span><span aria-hidden="true">→</span></a
+                    >
+                    <a href="#projects" class="menu__item"
+                        ><span class="menu__num k">06</span><span class="menu__title">Projects</span
+                        ><span class="menu__tag k">SELECTED WORK</span><span aria-hidden="true">→</span></a
+                    >
+                    <a href="#contact" class="menu__item"
+                        ><span class="menu__num k">07</span><span class="menu__title">Contact</span
+                        ><span class="menu__tag k">GET IN TOUCH</span><span aria-hidden="true">→</span></a
+                    >
+                </nav>
+                <div class="menu__foot">
+                    <span class="k">LINKS</span>
+                    <div class="menu__foot-links">
+                        <a href="https://github.com/dev-fusion-code" target="_blank" rel="noopener" class="menu-link"
+                            ><svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                            GITHUB ↗</a
+                        >
+                        <a href="https://www.linkedin.com/in/sakethp-" target="_blank" rel="noopener" class="menu-link"
+                            ><svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                />
+                            </svg>
+                            LINKEDIN ↗</a
+                        >
+                        <a href="https://leetcode.com/u/devfusion/" target="_blank" rel="noopener" class="menu-link"
+                            ><svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607L9.36 7.87l4.084-4.37c.54-.54.54-1.414.003-1.955A1.378 1.378 0 0 0 13.483 0zm-2.88 7.283a1.39 1.39 0 0 0-.968.423l-3.59 3.837a3.537 3.537 0 0 0-.544.757 3.633 3.633 0 0 0-.25 1.587 3.57 3.57 0 0 0 .878 2.058l3.193 3.128c1.372 1.341 3.582 1.345 4.96.009l4.87-4.732a1.378 1.378 0 0 0-.003-1.955 1.378 1.378 0 0 0-1.951-.003l-4.87 4.732a.707.707 0 0 1-1.002-.002L10.19 14.01a.755.755 0 0 1-.183-.432.744.744 0 0 1 .051-.334.78.78 0 0 1 .116-.164l3.59-3.838c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-.966-.423z"
+                                />
+                            </svg>
+                            LEETCODE ↗</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <main id="main">
+                <section id="hero" class="hero-block">
+                    <div class="hero">
+                        <div class="name-stage">
+                            <div class="stage-row stage-row--top">
+                                <div class="callout callout--tl">
+                                    <span class="sticker sticker--mint">Software Developer</span>
+                                    <svg
+                                        class="doodle-arrow doodle-arrow--tl"
+                                        viewBox="0 0 60 50"
+                                        fill="none"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M10 8 C 16 22, 28 36, 48 42" />
+                                        <path d="M36 43 L 49 43 L 47 31" />
+                                    </svg>
+                                </div>
+
+                                <div class="callout callout--tr">
+                                    <span class="sticker sticker--cream">Backend &amp; Cybersecurity</span>
+                                    <svg
+                                        class="doodle-arrow doodle-arrow--tr"
+                                        viewBox="0 0 60 50"
+                                        fill="none"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M50 8 C 44 22, 32 36, 12 42" />
+                                        <path d="M13 31 L 11 43 L 24 43" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="namebox" id="heroNamebox">
+                                <h1 class="pixel">SAKETH P</h1>
+                            </div>
+
+                            <div class="stage-row stage-row--bottom">
+                                <div class="callout callout--bl">
+                                    <svg
+                                        class="doodle-arrow doodle-arrow--bl"
+                                        viewBox="0 0 60 50"
+                                        fill="none"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M10 42 C 16 28, 28 14, 48 8" />
+                                        <path d="M47 19 L 49 7 L 36 7" />
+                                    </svg>
+                                    <span class="sticker sticker--yellow">B.TECH CSE · 2023–2027</span>
+                                </div>
+
+                                <div class="callout callout--br">
+                                    <svg
+                                        class="doodle-arrow doodle-arrow--br"
+                                        viewBox="0 0 60 50"
+                                        fill="none"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M50 42 C 44 28, 32 14, 12 8" />
+                                        <path d="M24 7 L 11 7 L 13 19" />
+                                    </svg>
+                                    <span class="sticker sticker--green"
+                                        >Kannur, Kerala · <time class="clock" id="clock">--:--:--</time> IST</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="badge-available">
+                            <span class="dot" aria-hidden="true"></span>Open for Full-Time Roles &amp; Internships (On-site, Hybrid or Remote)
+                        </div>
+                        <div class="headline-card">
+                            <h2 class="headline">
+                                I build backend systems and REST APIs while exploring cybersecurity &amp; ethical hacking.
+                            </h2>
+                        </div>
+                        <div class="hero__actions">
+                            <a class="btn" href="#projects"
+                                ><span class="btn__sq" aria-hidden="true"></span>VIEW PROJECTS</a
+                            >
+                            <a class="btn btn--ghost" href="#contact">CONTACT <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="squiggle" aria-hidden="true"></div>
+
+                <section id="about" class="block block--viewport about">
+                    <div class="sec-head">
+                        <span class="num hand">01</span>
+                        <h2 class="boxed hand">About</h2>
+                    </div>
+
+                    <div class="about-grid">
+                        <figure class="polaroid polaroid--l tape tape--blue">
+                            <div class="polaroid__img">
+                                <span class="k">ACADEMICS</span>
+                                <span class="metric-num">8.21</span>
+                                <span class="k">CGPA / 10</span>
+                                <span class="meter" id="cgpaMeter" data-value="8.21" aria-hidden="true"></span>
+                            </div>
+                            <figcaption>GATE CS 2026 Qualified</figcaption>
+                        </figure>
+
+                        <div class="about-lead card">
+                            <h3 class="card__title card__title--sm">
+                                B.Tech Computer Science &amp; Engineering (Minor in ECE) · Software Developer &amp; Backend Engineer ·
+                                Cybersecurity &amp; Ethical Hacking
+                            </h3>
+                            <p class="about__lead-text">
+                                Final-year B.Tech Computer Science and Engineering student (with a Minor in Electronics &amp; Communication) at Vimal Jyothi Engineering College, Kannur. Software developer building web applications and APIs with Python, Django and FastAPI. Interested in Cybersecurity and Ethical Hacking. Winner at
+                                <strong>Hac’KP 2026</strong> (Kerala Police Cyberdome) and qualified
+                                <strong>GATE CS 2026</strong>.
+                            </p>
+                        </div>
+
+                        <figure class="polaroid polaroid--r tape tape--yellow">
+                            <div class="polaroid__img polaroid__img--mint">
+                                <span class="k">WINNER · 2026</span>
+                                <span class="metric-num metric-num--text">Hac’KP</span>
+                                <span class="k">Kerala Police Cyberdome</span>
+                            </div>
+                            <figcaption>Awarded at <span class="c0c0n">c0c0n</span> 2026</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="about__foot">
+                        <p class="k label">FOCUS</p>
+                        <div class="chips">
+                            <span class="sticker sticker--yellow">Cyber Security &amp; Ethical Hacking</span>
+                            <span class="sticker sticker--green">Backend Systems &amp; REST APIs</span>
+                            <span class="sticker sticker--pink">Digital Forensics</span>
+                            <span class="sticker sticker--blue">UI/UX Design</span>
+                            <span class="sticker sticker--cream">Computer Vision</span>
+                        </div>
+                        <p class="k label">LINKS</p>
+                        <div class="links">
+                            <a
+                                class="btn btn--ghost"
+                                href="https://github.com/dev-fusion-code"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                    />
+                                </svg>
+                                <b>GitHub</b><span class="k">dev-fusion-code</span><span aria-hidden="true">↗</span>
+                            </a>
+                            <a
+                                class="btn btn--ghost"
+                                href="https://www.linkedin.com/in/sakethp-"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                    />
+                                </svg>
+                                <b>LinkedIn</b><span class="k">sakethp-</span><span aria-hidden="true">↗</span>
+                            </a>
+                            <a
+                                class="btn btn--ghost"
+                                href="https://leetcode.com/u/devfusion/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607L9.36 7.87l4.084-4.37c.54-.54.54-1.414.003-1.955A1.378 1.378 0 0 0 13.483 0zm-2.88 7.283a1.39 1.39 0 0 0-.968.423l-3.59 3.837a3.537 3.537 0 0 0-.544.757 3.633 3.633 0 0 0-.25 1.587 3.57 3.57 0 0 0 .878 2.058l3.193 3.128c1.372 1.341 3.582 1.345 4.96.009l4.87-4.732a1.378 1.378 0 0 0-.003-1.955 1.378 1.378 0 0 0-1.951-.003l-4.87 4.732a.707.707 0 0 1-1.002-.002L10.19 14.01a.755.755 0 0 1-.183-.432.744.744 0 0 1 .051-.334.78.78 0 0 1 .116-.164l3.59-3.838c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-.966-.423z"
+                                    />
+                                </svg>
+                                <b>LeetCode</b><span class="k">devfusion</span><span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experience" class="block block--viewport">
+                    <div class="sec-head">
+                        <span class="num hand">02</span>
+                        <h2 class="boxed hand">Experience</h2>
+                    </div>
+                    <article class="card card--folio tape tape--yellow">
+                        <div class="folio-head">
+                            <div class="folio-head__tags">
+                                <span class="folio-badge">17–31 AUG 2026 · KANNUR CITY</span>
+                                <span class="sticker sticker--green sticker--sm">CYBER CRIME POLICE STATION</span>
+                            </div>
+                            <h3 class="card__title">Cybercrime Investigation Intern</h3>
+                            <p class="muted">
+                                District Crime Records Bureau, Kannur City (Cyber Crime Police Station, Kannur) ·
+                                Kannur, Kerala
+                            </p>
+                        </div>
+                        <div class="folio-steps">
+                            <div class="folio-step">
+                                <div class="folio-step__bar">
+                                    <span class="folio-step__num">01</span>
+                                    <span class="folio-step__tag">DIGITAL FORENSICS</span>
+                                </div>
+                                <p>
+                                    Learned digital forensics fundamentals: evidence hashing (MD5, SHA1), hardware write blockers and disk and pen drive imaging, and why each matters for evidence integrity in court. Saw a live imaging demonstration.
+                                </p>
+                            </div>
+                            <div class="folio-step">
+                                <div class="folio-step__bar">
+                                    <span class="folio-step__num">02</span>
+                                    <span class="folio-step__tag">CASE HANDLING</span>
+                                </div>
+                                <p>
+                                    Learned the types of cybercrime and how police handle a complaint from intake to resolution, including the limits of the process. Went through a real case with the officer.
+                                </p>
+                            </div>
+                            <div class="folio-step">
+                                <div class="folio-step__bar">
+                                    <span class="folio-step__num">03</span>
+                                    <span class="folio-step__tag">NCRP &amp; FRAUD RECOVERY</span>
+                                </div>
+                                <p>
+                                    Learned about the National Cybercrime Reporting Portal, grievance tracking, and the Money Restoration Module for financial fraud. Saw how complaints are registered and processed on these portals.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <section id="skills" class="block block--viewport">
+                    <div class="sec-head">
+                        <span class="num hand">03</span>
+                        <h2 class="boxed hand">Skills</h2>
+                    </div>
+                    <div class="skills">
+                        <div class="card card--skill card--skill-primary">
+                            <h3 class="k"><span class="dot-live" aria-hidden="true"></span> PRIMARY STACK</h3>
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>FastAPI</li>
+                            </ul>
+                        </div>
+                        <div class="card card--skill card--skill-cyber">
+                            <h3 class="k">CYBERSECURITY</h3>
+                            <ul class="tags">
+                                <li>Cybersecurity</li>
+                                <li>Ethical Hacking</li>
+                                <li>Digital Forensics (Evidence Hashing, Disk Imaging)</li>
+                                <li>Kali Linux</li>
+                                <li>Nmap</li>
+                                <li>Wireshark</li>
+                                <li>Metasploit</li>
+                                <li>OpenVAS</li>
+                            </ul>
+                        </div>
+                        <div class="card card--skill card--skill-backend">
+                            <h3 class="k">BACKEND &amp; APIS</h3>
+                            <ul class="tags">
+                                <li>Django REST Framework</li>
+                                <li>Flask</li>
+                                <li>RESTful APIs</li>
+                            </ul>
+                        </div>
+                        <div class="card card--skill card--skill-lang">
+                            <h3 class="k">LANGUAGES</h3>
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+                        <div class="card card--skill card--skill-ai">
+                            <h3 class="k">AI TOOLS</h3>
+                            <ul class="tags">
+                                <li>Claude Code</li>
+                                <li>GitHub Copilot</li>
+                                <li>Ollama</li>
+                            </ul>
+                        </div>
+                        <div class="card card--skill card--skill-db">
+                            <h3 class="k">DATABASES</h3>
+                            <ul class="tags">
+                                <li>MySQL</li>
+                                <li>SQLite3</li>
+                            </ul>
+                        </div>
+                        <div class="card card--skill card--skill-tools">
+                            <h3 class="k">TOOLS &amp; SYSTEMS</h3>
+                            <ul class="tags">
+                                <li>Linux</li>
+                                <li>Docker</li>
+                                <li>VirtualBox</li>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="card card--skill card--skill-cv">
+                            <h3 class="k">COMPUTER VISION</h3>
+                            <ul class="tags">
+                                <li>OpenCV</li>
+                                <li>InsightFace</li>
+                            </ul>
+                        </div>
+                        <div class="card card--skill card--skill-foundations">
+                            <h3 class="k">CORE FOUNDATIONS</h3>
+                            <ul class="tags">
+                                <li>Full-Stack Web Development</li>
+                                <li>Computer Hardware &amp; Networking</li>
+                                <li>UI/UX Design (Figma)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education" class="block block--viewport">
+                    <div class="sec-head">
+                        <span class="num hand">04</span>
+                        <h2 class="boxed hand">Education</h2>
+                    </div>
+                    <div class="list list--2">
+                        <article class="card card--edu card--edu-degree tape tape--blue">
+                            <div class="edu-top">
+                                <div class="edu-top__info">
+                                    <div class="edu-top__univ">
+                                        <span class="k">APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY (KTU)</span>
+                                        <span class="sticker sticker--green sticker--sm">2023–2027 · CURRENT</span>
+                                    </div>
+                                    <h3 class="card__title">B.Tech in Computer Science &amp; Engineering</h3>
+                                    <p class="edu-minor"><span class="k">MINOR:</span> Electronics &amp; Communication Engineering (ECE)</p>
+                                    <p class="muted">Vimal Jyothi Engineering College (VJEC), Chemperi, Kannur</p>
+                                </div>
+                                <div class="edu-stamp">
+                                    <span class="k">CGPA</span>
+                                    <span class="edu-stamp__score">8.21</span>
+                                    <span class="edu-stamp__scale">/ 10</span>
+                                </div>
+                            </div>
+                            <div class="edu-progress">
+                                <span
+                                    class="years"
+                                    id="years"
+                                    data-start="2023-08-01"
+                                    data-end="2027-07-31"
+                                    aria-hidden="true"
+                                    ><span class="years__fill" id="yearsFill"></span
+                                ></span>
+                                <div class="edu-timeline">
+                                    <span class="k">2023 · YEAR 1</span>
+                                    <span class="k">2024 · YEAR 2</span>
+                                    <span class="k">2025 · YEAR 3</span>
+                                    <span class="k">2026 · FINAL YEAR</span>
+                                    <span class="k">2027 · DEGREE</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--edu card--edu-gate tape tape--yellow">
+                            <div class="edu-head">
+                                <span class="k">FEB 2026</span>
+                                <span class="sticker sticker--green sticker--sm">★ QUALIFIED</span>
+                            </div>
+                            <h3 class="card__title">GATE CS 2026</h3>
+                            <p class="muted">
+                                Graduate Aptitude Test in Engineering · Computer Science &amp; Information Technology
+                            </p>
+                            <div class="edu-subtag"><span class="k">SCORE: 392</span></div>
+                        </article>
+
+                        <article class="card card--edu card--edu-school">
+                            <div class="edu-head">
+                                <span class="k">2023 · SENIOR SECONDARY</span>
+                                <span class="school-score">80.4%</span>
+                            </div>
+                            <h3 class="card__title">Class 12 · Computer Science &amp; Mathematics</h3>
+                            <p class="muted">Mambaram English Medium Senior Secondary School · CBSE</p>
+                        </article>
+
+                        <article class="card card--edu card--edu-school">
+                            <div class="edu-head">
+                                <span class="k">2021 · SECONDARY</span>
+                                <span class="school-score">90.4%</span>
+                            </div>
+                            <h3 class="card__title">Class 10</h3>
+                            <p class="muted">Mambaram English Medium Senior Secondary School · CBSE</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="achievements" class="block block--viewport">
+                    <div class="sec-head">
+                        <span class="num hand">05</span>
+                        <h2 class="boxed hand">Achievements &amp; Certifications</h2>
+                    </div>
+                    <div class="achieve-wrap">
+                        <article class="card card--award-hero tape tape--yellow">
+                            <div class="award-head">
+                                <span class="sticker sticker--yellow sticker--sm">★ WINNER</span>
+                                <span class="cert__date k">OCT 2026</span>
+                            </div>
+                            <h3 class="award-title">Hac’KP 2026: Kerala Police Cyberdome</h3>
+                            <div class="award-points">
+                                <div class="award-point">
+                                    <span class="award-point__star">★</span>
+                                    <p>
+                                        One of the 50 winners at Hac’KP 2026, working on an investigation tool for Kerala Police Cyberdome.
+                                    </p>
+                                </div>
+                                <div class="award-point">
+                                    <span class="award-point__star">★</span>
+                                    <p>
+                                        Worked in the backend team during the Hac’KP finals.
+                                    </p>
+                                </div>
+                                <div class="award-point">
+                                    <span class="award-point__star">★</span>
+                                    <p>
+                                        Received the prize on stage at <span class="c0c0n">c0c0n</span> 2026, a cybersecurity conference.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="cert-grid">
+                            <div class="card card--cert card--cert-gate">
+                                <div class="cert__head">
+                                    <span class="cert__issuer cert__issuer--gate">IIT GUWAHATI</span
+                                    ><span class="cert__date k">FEB 2026</span>
+                                </div>
+                                <h4 class="cert__title">GATE CS 2026 Qualified</h4>
+                            </div>
+                            <div class="card card--cert">
+                                <div class="cert__head">
+                                    <span class="cert__issuer cert__issuer--iit">NPTEL · IIT KHARAGPUR</span
+                                    ><span class="cert__date k">NOV 2025</span>
+                                </div>
+                                <h4 class="cert__title">Operating System Fundamentals</h4>
+                            </div>
+                            <div class="card card--cert">
+                                <div class="cert__head">
+                                    <span class="cert__issuer cert__issuer--iit-red">NPTEL · IIT MADRAS</span
+                                    ><span class="cert__date k">OCT 2025</span>
+                                </div>
+                                <h4 class="cert__title">Python for Data Science</h4>
+                            </div>
+                            <div class="card card--cert">
+                                <div class="cert__head">
+                                    <span class="cert__issuer cert__issuer--gtec">G-TEC EDUCATION</span
+                                    ><span class="cert__date k">JUL 2025</span>
+                                </div>
+                                <h4 class="cert__title">Python Certification</h4>
+                            </div>
+                            <div class="card card--cert">
+                                <div class="cert__head">
+                                    <span class="cert__issuer cert__issuer--iit">NPTEL · IIT KHARAGPUR</span
+                                    ><span class="cert__date k">NOV 2024</span>
+                                </div>
+                                <h4 class="cert__title">Programming in Java</h4>
+                            </div>
+                            <div class="card card--cert">
+                                <div class="cert__head">
+                                    <span class="cert__issuer cert__issuer--gtec">G-TEC EDUCATION</span
+                                    ><span class="cert__date k">SEP 2024</span>
+                                </div>
+                                <h4 class="cert__title">Java SE Certification</h4>
+                            </div>
+                            <div class="card card--cert">
+                                <div class="cert__head">
+                                    <span class="cert__issuer cert__issuer--infosys">INFOSYS SPRINGBOARD</span
+                                    ><span class="cert__date k">JUN 2024</span>
+                                </div>
+                                <h4 class="cert__title">Programming in C</h4>
+                            </div>
+                            <div class="card card--cert">
+                                <div class="cert__head">
+                                    <span class="cert__issuer cert__issuer--gtec">G-TEC EDUCATION</span
+                                    ><span class="cert__date k">OCT 2023</span>
+                                </div>
+                                <h4 class="cert__title">Honours Diploma in Computer Hardware &amp; Networking</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects" class="block">
+                    <div class="sec-head">
+                        <span class="num hand">06</span>
+                        <h2 class="boxed hand">Projects</h2>
+                    </div>
+                    <br />
+                    <div class="projects">
+                        <article class="proj proj--blue" id="project-01">
+                            <span class="proj__tab" aria-hidden="true">PROJECT #01</span>
+                            <h3 class="proj__h">
+                                <button class="proj__head" type="button" aria-expanded="false" aria-controls="panel-01">
+                                    <span class="proj__num k">01</span><span class="proj__title">Hac’KP 2026</span
+                                    ><span class="proj__stack k"
+                                        >AGENTIC INVESTIGATION SYSTEM · KERALA POLICE CYBERDOME · BACKEND</span
+                                    ><span class="proj__tog k" aria-hidden="true">VIEW PROJECT <b>+</b></span>
+                                </button>
+                            </h3>
+                            <div class="proj__panel" id="panel-01">
+                                <div class="proj__inner">
+                                    <div class="proj__body proj__body--solo">
+                                        <div class="proj__text">
+                                            <p>
+                                                Team project built during the Hac’KP 2026 finals for Kerala Police Cyberdome: an Agentic AI system for investigations.
+                                            </p>
+                                            <ol class="features">
+                                                <li>
+                                                    Worked in the backend team on the investigation tool for Kerala Police Cyberdome.
+                                                </li>
+                                                <li>
+                                                    Built backend services in Python and FastAPI, including data schemas and audit logging.
+                                                </li>
+                                                <li>
+                                                    One of the 50 winners, with the prize received at <span class="c0c0n">c0c0n</span> 2026.
+                                                </li>
+                                            </ol>
+                                            <span class="sticker sticker--yellow sticker--sm"
+                                                >ONE OF 50 WINNERS</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="proj proj--yellow" id="project-02">
+                            <span class="proj__tab" aria-hidden="true">PROJECT #02</span>
+                            <h3 class="proj__h">
+                                <button class="proj__head" type="button" aria-expanded="false" aria-controls="panel-02">
+                                    <span class="proj__num k">02</span><span class="proj__title">whereismypic?</span
+                                    ><span class="proj__stack k">REACT.JS · DJANGO · OPENCV · INSIGHTFACE · MYSQL</span
+                                    ><span class="proj__tog k" aria-hidden="true">VIEW PROJECT <b>+</b></span>
+                                </button>
+                            </h3>
+                            <div class="proj__panel" id="panel-02">
+                                <div class="proj__inner">
+                                    <div class="proj__body">
+                                        <div class="proj__text">
+                                            <p>
+                                                Event photo sorting web app. Photographers upload an event album, and guests find their photos by uploading a selfie.
+                                            </p>
+                                            <ol class="features">
+                                                <li>
+                                                    Face matching with InsightFace embeddings and OpenCV to group photos by person.
+                                                </li>
+                                                <li>
+                                                    Django backend for image uploads, user registration and photo search.
+                                                </li>
+                                                <li>
+                                                    Liveness check on the selfie, Fernet encryption, and ZIP download of matched photos.
+                                                </li>
+                                            </ol>
+                                            <a
+                                                class="btn"
+                                                href="https://github.com/dev-fusion-code/whereismypic"
+                                                target="_blank"
+                                                rel="noopener"
+                                                >VIEW ON GITHUB <span aria-hidden="true">↗</span></a
+                                            >
+                                        </div>
+                                        <figure class="window tape tape--blue">
+                                            <div class="window__bar">
+                                                <span class="window__dots" aria-hidden="true"
+                                                    ><i></i><i></i><i></i
+                                                ></span>
+                                                <figcaption class="window__title">
+                                                    github.com/dev-fusion-code/whereismypic
+                                                </figcaption>
+                                            </div>
+                                            <button
+                                                class="window__body"
+                                                type="button"
+                                                data-lightbox="assets/images/project2.jpeg"
+                                                data-lightbox-title="whereismypic?"
+                                                aria-label="Open whereismypic? screenshot"
+                                            >
+                                                <img
+                                                    src="assets/images/project2.jpeg"
+                                                    alt="whereismypic landing page with Find My Photos and Photographer Login buttons"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    width="2772"
+                                                    height="1739"
+                                                />
+                                            </button>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="proj proj--pink" id="project-03">
+                            <span class="proj__tab" aria-hidden="true">PROJECT #03</span>
+                            <h3 class="proj__h">
+                                <button class="proj__head" type="button" aria-expanded="false" aria-controls="panel-03">
+                                    <span class="proj__num k">03</span><span class="proj__title">DjangoPost</span
+                                    ><span class="proj__stack k">DJANGO · HTML5 · CSS3 · JAVASCRIPT · MySQL</span
+                                    ><span class="proj__tog k" aria-hidden="true">VIEW PROJECT <b>+</b></span>
+                                </button>
+                            </h3>
+                            <div class="proj__panel" id="panel-03">
+                                <div class="proj__inner">
+                                    <div class="proj__body">
+                                        <div class="proj__text">
+                                            <p>
+                                                Blogging web app built with Django.
+                                            </p>
+                                            <ol class="features">
+                                                <li>
+                                                    User login, profile pages and media uploads.
+                                                </li>
+                                                <li>
+                                                    Database models for posts, comments and likes.
+                                                </li>
+                                                <li>
+                                                    Separate admin and regular user accounts with different permissions.
+                                                </li>
+                                            </ol>
+                                            <a
+                                                class="btn"
+                                                href="https://github.com/dev-fusion-code/DjangoPost"
+                                                target="_blank"
+                                                rel="noopener"
+                                                >VIEW ON GITHUB <span aria-hidden="true">↗</span></a
+                                            >
+                                        </div>
+                                        <figure class="window tape tape--yellow">
+                                            <div class="window__bar">
+                                                <span class="window__dots" aria-hidden="true"
+                                                    ><i></i><i></i><i></i
+                                                ></span>
+                                                <figcaption class="window__title">
+                                                    github.com/dev-fusion-code/DjangoPost
+                                                </figcaption>
+                                            </div>
+                                            <button
+                                                class="window__body"
+                                                type="button"
+                                                data-lightbox="assets/images/project1.jpeg"
+                                                data-lightbox-title="DjangoPost"
+                                                aria-label="Open DjangoPost screenshot"
+                                            >
+                                                <img
+                                                    src="assets/images/project1.jpeg"
+                                                    alt="DjangoPost welcome screen with Sign Up and Log In buttons"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    width="2772"
+                                                    height="1739"
+                                                />
+                                            </button>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="proj proj--green" id="project-04">
+                            <span class="proj__tab" aria-hidden="true">PROJECT #04</span>
+                            <h3 class="proj__h">
+                                <button class="proj__head" type="button" aria-expanded="false" aria-controls="panel-04">
+                                    <span class="proj__num k">04</span><span class="proj__title">Notely</span
+                                    ><span class="proj__stack k">DJANGO · HTML5 · CSS3</span
+                                    ><span class="proj__tog k" aria-hidden="true">VIEW PROJECT <b>+</b></span>
+                                </button>
+                            </h3>
+                            <div class="proj__panel" id="panel-04">
+                                <div class="proj__inner">
+                                    <div class="proj__body">
+                                        <div class="proj__text">
+                                            <p>Note-taking web app built with Django where each user has their own account and notes.</p>
+                                            <ol class="features">
+                                                <li>
+                                                    User accounts with profile editing and avatar upload.
+                                                </li>
+                                                <li>
+                                                    Create, edit, search and delete notes.
+                                                </li>
+                                                <li>
+                                                    Seperate light and dark themes.
+                                                </li>
+                                            </ol>
+                                            <a
+                                                class="btn"
+                                                href="https://github.com/dev-fusion-code/Notely"
+                                                target="_blank"
+                                                rel="noopener"
+                                                >VIEW ON GITHUB <span aria-hidden="true">↗</span></a
+                                            >
+                                        </div>
+                                        <figure class="window tape tape--pink">
+                                            <div class="window__bar">
+                                                <span class="window__dots" aria-hidden="true"
+                                                    ><i></i><i></i><i></i
+                                                ></span>
+                                                <figcaption class="window__title">
+                                                    github.com/dev-fusion-code/Notely
+                                                </figcaption>
+                                            </div>
+                                            <button
+                                                class="window__body"
+                                                type="button"
+                                                data-lightbox="assets/images/project3.jpeg"
+                                                data-lightbox-title="Notely"
+                                                aria-label="Open Notely screenshot"
+                                            >
+                                                <img
+                                                    src="assets/images/project3.jpeg"
+                                                    alt="Notely login screen with username and password fields"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    width="2772"
+                                                    height="1739"
+                                                />
+                                            </button>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="proj proj--dark" id="project-05">
+                            <span class="proj__tab" aria-hidden="true">PROJECT #05</span>
+                            <h3 class="proj__h">
+                                <button class="proj__head" type="button" aria-expanded="false" aria-controls="panel-05">
+                                    <span class="proj__num k">05</span><span class="proj__title">snippet</span
+                                    ><span class="proj__stack k">C · CLI · FILE I/O</span
+                                    ><span class="proj__tog k" aria-hidden="true">VIEW PROJECT <b>+</b></span>
+                                </button>
+                            </h3>
+                            <div class="proj__panel" id="panel-05">
+                                <div class="proj__inner">
+                                    <div class="proj__body">
+                                        <div class="proj__text">
+                                            <p>
+                                                Command line snippet manager written in C. Save, search, tag and export code snippets from the terminal.
+                                            </p>
+                                            <ol class="features">
+                                                <li>
+                                                    Snippets stored in local files and searched by tag.
+                                                </li>
+                                                <li>
+                                                    Add, update, delete and export snippets from the CLI.
+                                                </li>
+                                                <li>
+                                                    Written in C using only the standard library.
+                                                </li>
+                                            </ol>
+                                            <a
+                                                class="btn btn--light"
+                                                href="https://github.com/dev-fusion-code/snippet"
+                                                target="_blank"
+                                                rel="noopener"
+                                                >VIEW ON GITHUB <span aria-hidden="true">↗</span></a
+                                            >
+                                        </div>
+                                        <figure class="window tape tape--yellow">
+                                            <div class="window__bar">
+                                                <span class="window__dots" aria-hidden="true"
+                                                    ><i></i><i></i><i></i
+                                                ></span>
+                                                <figcaption class="window__title">
+                                                    github.com/dev-fusion-code/snippet
+                                                </figcaption>
+                                            </div>
+                                            <button
+                                                class="window__body"
+                                                type="button"
+                                                data-lightbox="assets/images/project4.jpeg"
+                                                data-lightbox-title="snippet"
+                                                aria-label="Open snippet screenshot"
+                                            >
+                                                <img
+                                                    src="assets/images/project4.jpeg"
+                                                    alt="snippet CLI interface showing snippet tags and code options"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    width="2772"
+                                                    height="1739"
+                                                />
+                                            </button>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="contact" class="block block--viewport">
+                    <div class="sec-head">
+                        <span class="num hand">07</span>
+                        <h2 class="boxed hand">Contact</h2>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__intro">
+                            <div class="headline-box">
+                                <h3 class="headline">Let's build something reliable &amp; secure</h3>
+                            </div>
+                            <div class="contact-note">
+                                <p class="body">
+                                    Actively seeking
+                                    <strong
+                                        >Software Engineering Roles, Internships &amp; Cybersecurity Opportunities</strong
+                                    >. If you think I'd be a great fit for your team or want to discuss an opportunity,
+                                    let's connect.
+                                </p>
+                            </div>
+                            <div class="links links--left">
+                                <a
+                                    class="btn btn--github"
+                                    href="https://github.com/dev-fusion-code"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                        />
+                                    </svg>
+                                    <b>GitHub</b><span class="k">dev-fusion-code</span><span aria-hidden="true">↗</span>
+                                </a>
+                                <a
+                                    class="btn btn--linkedin"
+                                    href="https://www.linkedin.com/in/sakethp-"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                        />
+                                    </svg>
+                                    <b>LinkedIn</b><span class="k">sakethp-</span><span aria-hidden="true">↗</span>
+                                </a>
+                                <a
+                                    class="btn btn--leetcode"
+                                    href="https://leetcode.com/u/devfusion/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607L9.36 7.87l4.084-4.37c.54-.54.54-1.414.003-1.955A1.378 1.378 0 0 0 13.483 0zm-2.88 7.283a1.39 1.39 0 0 0-.968.423l-3.59 3.837a3.537 3.537 0 0 0-.544.757 3.633 3.633 0 0 0-.25 1.587 3.57 3.57 0 0 0 .878 2.058l3.193 3.128c1.372 1.341 3.582 1.345 4.96.009l4.87-4.732a1.378 1.378 0 0 0-.003-1.955 1.378 1.378 0 0 0-1.951-.003l-4.87 4.732a.707.707 0 0 1-1.002-.002L10.19 14.01a.755.755 0 0 1-.183-.432.744.744 0 0 1 .051-.334.78.78 0 0 1 .116-.164l3.59-3.838c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-.966-.423z"
+                                        />
+                                    </svg>
+                                    <b>LeetCode</b><span class="k">devfusion</span><span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card card--dispatch tape tape--blue">
+                            <form
+                                class="form"
+                                id="contactForm"
+                                action="https://docs.google.com/forms/d/e/1FAIpQLScpSL3sqrX3HWMJF3C8wDvYSoheEq_csuA_zIbGgSQOnByw3w/formResponse"
+                                method="POST"
+                                target="hidden_iframe"
+                            >
+                                <label class="k" for="name">01. YOUR NAME</label>
+                                <input
+                                    class="input"
+                                    type="text"
+                                    id="name"
+                                    name="entry.1876380058"
+                                    required
+                                    placeholder="Your full name"
+                                    autocomplete="name"
+                                />
+                                <label class="k" for="email">02. EMAIL ADDRESS</label>
+                                <input
+                                    class="input"
+                                    type="email"
+                                    id="email"
+                                    name="entry.1703142794"
+                                    required
+                                    placeholder="your.email@example.com"
+                                    autocomplete="email"
+                                />
+                                <label class="k" for="message">03. MESSAGE / INQUIRY</label>
+                                <textarea
+                                    class="input"
+                                    id="message"
+                                    name="entry.718276959"
+                                    rows="3"
+                                    required
+                                    placeholder="Tell me about your project, team, or inquiry..."
+                                ></textarea>
+                                <button class="btn btn--block" type="submit" id="submitBtn">
+                                    <span id="submitLabel">SEND MESSAGE</span> <span aria-hidden="true">→</span>
+                                </button>
+                            </form>
+                            <div class="notice" id="formSuccess" role="status" aria-live="polite">
+                                <span
+                                    ><strong>Message sent!</strong> Thank you for reaching out. Your message has been
+                                    received and I will reply shortly.</span
+                                >
+                            </div>
+                            <iframe
+                                name="hidden_iframe"
+                                id="hidden_iframe"
+                                title="Form submission"
+                                tabindex="-1"
+                                aria-hidden="true"
+                                hidden
+                            ></iframe>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <span class="k">© 2026 SAKETH P · DEV-FUSION-CODE</span>
+                <a class="btn btn--top" href="#hero">BACK TO TOP <span aria-hidden="true">↑</span></a>
+            </footer>
+        </div>
+
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+            <div class="lightbox__panel">
+                <div class="lightbox__bar">
+                    <span id="lightboxTitle" class="k"></span>
+                    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Close">✕</button>
+                </div>
+                <img id="lightboxImg" alt="" />
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
